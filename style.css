@@ -234,6 +234,7 @@ section {
     display: flex;
     height: auto;
     width: auto;
+    align-self: center;
 }
 
 .section__pic-container img {

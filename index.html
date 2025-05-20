@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body id="top">
+    <nav id="desktop-nav">
+        <div class="logo">Sacha Ceneda</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-color">About</a></li>
+                <li><a href="#experience" class="nav-color">Experience</a></li>
+                <li><a href="#projects" class="nav-color">Projects</a></li>
+                <li><a href="#contact" class="nav-color">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Sacha Ceneda</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <img src="./assets/up-arrow.png" alt="Arrow icon" class="icon up-arrow"
+    onclick="location.href='./#top'">
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/IMG_3431.png" alt="Sacha Ceneda profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Sacha Ceneda</h1>
+            <p class="section__text__p2">Game Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/CV.pdf')">
+                Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="linkedIn profile" class="icon" 
+                onclick="location.href='https://linkedin.com/in/sacha-ceneda-6538b3345'">
+                <img src="./assets/github.png" alt="github profile" class="icon" 
+                onclick="location.href='https://github.com/asfgvu'">
+                <img src="./assets/artstation.png" alt="artstation profile" class="icon" 
+                onclick="location.href='https://artstation.com/sacha_cnd'">
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/IMG_3431.png" alt="Profile picture" 
+                class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container container-bordure">
+                        <img src="./assets/experience.png" alt="Experience Icon" 
+                        class="icon contact-icon">
+                        <h3 class="p-experience">Experience</h3>
+
+                        <br>
+
+                        <p class="p-grey"><b>Agricultural Worker</b>
+                        <p class="p-black">
+                            Lidea
+                            <br>Part-time job
+                        </p>
+                        </p>
+
+                        <br>
+
+                        <p class="p-grey"><b>Restaurant Employee</b>
+                        <p class="p-black">
+                                Tutti Pizza
+                        <br>Part-time job
+                        </p>
+                        </p>
+
+                        <br>
+
+                        <p class="p-grey"><b>Web Development</b>
+                        <p class="p-black">
+                            CMFC
+                        <br>Internship
+                        </p>
+                        </p>
+
+                        <br>
+
+                        <p class="p-grey"><b>Web Development</b>
+                        <p class="p-black">
+                            ERASMUS+ 
+                        <br>Internship
+                        </p>
+                        </p>
+
+                        <br>
+
+                        <p class="p-grey"><b>IT Network Management</b>
+                        <p class="p-black">
+                            High School Roland Garros and Arènes
+                        <br>Internship
+                        </p>
+                        </p>
+
+                    </div>
+                    <div class="details-container container-bordure">
+                        <img src="./assets/education.png" alt="Education Icon" 
+                        class="icon contact-icon">
+                        <h3 class="p-experience">Education</h3>
+
+                        <br>
+
+                        <p class="p-grey"><b>Bachelor's Degree | Game Design</b></p>
+                        <p class="p-black">Toulouse 2022-2025</p>
+
+                        <br>
+
+                        <p class="p-grey"><b>BTEC Higher National Diploma | IT Services for Organisations</b></p>
+                        <p class="p-black">High School Pardailhan Auch 2020-2022</p>
+
+                        <br>
+
+                        <p class="p-grey"><b>High School Diploma | Sciences and Technologies for 
+                        Industry and Sustainable Development</b></p>
+                        <p class="p-black">High School Saint-Exupéry Blagnac 2017-2020</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container container-bordure">
+                    <h2 class="experience-sub-title">Programming</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>Unity</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>C#</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>Unreal Engine</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>C++</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>Löve2D</h3>
+                                <p>Beginner</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>Lua</h3>
+                                <p>Beginner</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container container-bordure">
+                    <h2 class="experience-sub-title">VFX</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>Niagara</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>Unity particle system</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>Visual Effect Graph</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>Modeling</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container container-bordure">
+                    <h2 class="experience-sub-title">Other</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>Unreal PCG</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>Visual Studio</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>Git</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>Trello</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>Miro</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container untouched-container container-bordure">
+                    <h2 class="experience-sub-title">Language</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>French</h3>
+                                <p>Native</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon"
+                            class="icon">
+                            <div>
+                                <h3>English</h3>
+                                <p>B2</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="about-containers">
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="projects-desktop">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+
+        <div class="project-container">
+            <div class="project__pic-container">
+                <img src="./assets/RenegadeProtocol/JeuAnnee1.gif" alt="Renegade Protocol Picture" 
+                class="project-img">
+            </div>
+            <div class="section__text">
+                <p class="section__text__project1">Renegade Protocol</p>
+                <p class="section__text__project2">This project was created as a first-year project by five 
+                students, it is a 3D cyberpunk-themed shoot 'em up.</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="location.href='RenegadeProtocol.html'">
+                    See More</button>
+                    <!-- <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info</button> -->
+                </div>
+
+                <div class="separation"></div>
+            </div>
+        </div>
+
+        
+
+        <div class="project-container">
+            
+            <div class="section__text">
+                <p class="section__text__project1">Alwan</p>
+                <p class="section__text__project2">This project was created as a second-year project by seven 
+                students, it is a 3D aventure platformer inspired by Moroccan culture.</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="location.href='Alwan.html'">
+                    See More</button>
+                    <!-- <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info</button> -->
+                </div>
+
+                <div class="separation"></div>
+            </div>
+
+            <div class="project__pic-container">
+                <img src="./assets/Alwan/alwanfondartstationoui.jpg" alt="Alwan Picture" 
+                class="project-img">
+            </div>
+        </div>
+
+        
+
+        <div class="project-container">
+            <div class="project__pic-container">
+                <img src="./assets/PCG/pcgbaniere3.png" alt="PCG Picture" 
+                class="project-img">
+            </div>
+            <div class="section__text">
+                <p class="section__text__project1">PCG</p>
+                <p class="section__text__project2">This project is a personal project I made in order to learn
+                more about PCG in Unreal Engine.</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="location.href='PCG.html'">
+                    See More</button>
+                    <!-- <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info</button> -->
+                </div>
+
+                <div class="separation"></div>
+            </div>
+        </div>
+
+        
+
+        <div class="project-container">
+            
+            <div class="section__text">
+                <p class="section__text__project1">Hono</p>
+                <p class="section__text__project2">This project was created as a final-year project by ten 
+                students, it is a 3D metroidbrainia inspired by Maori culture.</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="location.href='Hono.html'">
+                    See More</button>
+                    <!-- <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info</button> -->
+                </div>
+
+                <div class="separation"></div>
+            </div>
+
+            <div class="project__pic-container">
+                <img src="./assets/Hono/honoWIP.png" alt="Hono Picture" 
+                class="project-img">
+            </div>
+        </div>
+    </section>
+
+    <section id="projects-other">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+
+        <div class="project-container">
+            <div class="project__pic-container">
+                <img src="./assets/RenegadeProtocol/JeuAnnee1.gif" alt="Renegade Protocol Picture" 
+                class="project-img">
+            </div>
+            <div class="section__text">
+                <p class="section__text__project1">Renegade Protocol</p>
+                <p class="section__text__project2">This project was created as a first-year project by five 
+                students, it is a 3D cyberpunk-themed shoot 'em up.</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="location.href='RenegadeProtocol.html'">
+                    See More</button>
+                    <!-- <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info</button> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="project-container">
+            <div class="project__pic-container">
+                <img src="./assets/Alwan/alwanfondartstationoui.jpg" alt="Alwan Picture" 
+                class="project-img">
+            </div>
+            <div class="section__text">
+                <p class="section__text__project1">Alwan</p>
+                <p class="section__text__project2">This project was created as a second-year project by seven 
+                students, it is a 3D aventure platformer inspired by Moroccan culture.</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="location.href='Alwan.html'">
+                    See More</button>
+                    <!-- <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info</button> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="project-container">
+            <div class="project__pic-container">
+                <img src="./assets/PCG/pcgbaniere3.png" alt="PCG Picture" 
+                class="project-img">
+            </div>
+            <div class="section__text">
+                <p class="section__text__project1">PCG</p>
+                <p class="section__text__project2">This project is a personal project I made in order to learn
+                more about PCG in Unreal Engine.</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="location.href='PCG.html'">
+                    See More</button>
+                    <!-- <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info</button> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="project-container">
+            <div class="project__pic-container">
+                <img src="./assets/Hono/honoWIP.png" alt="Hono Picture" 
+                class="project-img">
+            </div>
+            <div class="section__text">
+                <p class="section__text__project1">Hono</p>
+                <p class="section__text__project2">This project was created as a final-year project by ten 
+                students, it is a 3D metroidbrainia inspired by Maori culture.</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="location.href='Hono.html'">
+                    See More</button>
+                    <!-- <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info</button> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch </p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon"
+                class="icon contact-icon email-icon">
+                <p><a href="mailto:sacha.ceneda@gmail.com">sacha.ceneda@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="linkedIn icon"
+                class="icon contact-icon">
+                <p><a href="https://linkedin.com/in/sacha-ceneda-6538b3345">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2025 Sacha Ceneda. All Rights Reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

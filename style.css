@@ -607,6 +607,12 @@ footer p {
     border-radius: 1rem;
 }
 
+.work-container iframe {
+    width: 100%;
+    height: calc(100vw/2);
+    border-radius: 1rem;
+}
+
 .full-width {
     height: 100%;
     width: 100%;

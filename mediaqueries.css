@@ -78,7 +78,7 @@
         display: none;
     }
 
-    #projects-other {
+    #projects {
         display: contents;
     }
 }
